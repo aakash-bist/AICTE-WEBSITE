@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AICTE</title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="icon" type="image/jpg" href="../images/logo7.jpg">
+      <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+<style>
+    
+
+body { 
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+       background-color: #0b2d5d;
+    }
+
+.navbar-inverse {
+    background-color: #ff942a;
+    border-color: #efe8e2;
+    padding: 3px;
+  }
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #eee;
+}
+
+
+.topdiv {
+    
+    background: #ffffff;
+    clear: both;
+
+}
+
+.top_banner {
+    height: 120px;
+    width: 100%;
+    
+    
+ background-color: white;
+
+}
+
+.topbuton {
+
+  text-align: right;
+}
+
+
+.banner_text {
+    position: absolute;
+    
+    left: 50%;
+    top: 30%;
+
+  
+
+}
+
+
+.dropdown-menu {
+
+    background-color: #f7941d;
+  }
+
+  .dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: nowrap;
+}
+
+
+.search {
+
+
+    padding: 0px 0px 0px 100px;
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 8px;
+position:relative;
+   
+
+}
+.tex {
+
+  margin-top: 20px;
+}
+
+#backg{
+  position: relative;
+}
+#backg:after
+{
+content: "";
+display: block;
+position: absolute;
+top: 34px;
+left: 250;
+background-image: url(../images/map-ashoka.gif);
+background-repeat: no-repeat;
+width: 100%;
+height: 100%;
+opacity: 0.3;
+z-index: -1;
+right: -170px;
+    
+}
+
+.hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1.5px solid rgb(255, 148, 42);
+}
+
+.banner_text h1 {
+    font-size: 3em;
+     margin: 0;
+   box-shadow: 0px 1px #ff942a;
+}
+}
+
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green > a {
+    color: #5cb85c;
+}
+
+.panel-green > a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red > .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red > a {
+    color: #d9534f;
+}
+
+.panel-red > a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow > .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow > a {
+    color: #f0ad4e;
+}
+
+.panel-yellow > a:hover {
+    color: #df8a13;
+}
+
+.footerleft { margin-top:50px; padding:0 66px; }
+.logofooter { margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;}
+
+.footerleft p { color:#fff; font-size:12px !important; font-family: 'Open Sans', sans-serif; margin-bottom:15px;}
+.footerleft p i { width:20px; color:#999;}
+
+
+.paddingtop-bottom {  margin-top:50px;}
+.footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
+.footer-ul li { line-height:29px; font-size:12px;}
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul i { margin-right:10px;}
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ 
+ 
+
+ 
+ .icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
+ .icon-ul li { line-height:75px; width:100%; float:left;}
+ .icon { float:left; margin-right:5px;}
+ 
+ 
+ .copyright { min-height:40px; background-color:#000000;}
+ .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
+ .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p { font-size:12px; color:#FFF; line-height:20px;}
+ .post p span { display:block; color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+footer { background-color:#0c1a1e; min-height:350px; font-family: 'Open Sans', sans-serif; }
+
+
+
+</style>
+    
+
+
+
+
+</head>
+
+<body>
+
+   <div class="topdiv" style="height:8px;color:black; border: 1px;"><a href="" style="color: black;">
+    
+        <div class="topbuton container">
+        <img src="../images/flag.gif" style="    float: left;"><a href="https://india.gov.in/" style=" float: left; margin-left: 10px;">GOVERNMENT OF INDIA</a>
+
+       <span class="theme_base" ><a class="lang" href="#" style="color: blue; border-left: 1px solid rgb(255, 148, 42); padding: 7px;">
+              हिंदी </a> &nbsp;  <a href="#" style="color:black; border-left: 1px solid rgb(255, 148, 42); padding: 10px;"> 
+               English </a>   <a href="#main-content" style="color:black; border-left: 1px solid rgb(255, 148, 42); padding: 10px;">-A</a>
+               <a href="#" style="color:black; border-left: 1px solid rgb(255, 148, 42); padding: 10px; "> 
+               A </a>   <a href="#" style="color:black; border-left: 1px solid rgb(255, 148, 42); padding: 10px;"> 
+               +A </a>        <a href="#" style="color:black; border-left: 1px solid rgb(255, 148, 42); padding: 10px;"> <kbd>
+                A</kbd></a> <a href="#" style="color:black; border-left: 1px solid rgb(255, 148, 42); padding: 10px;"> 
+               </a>    
+            </span>
+           
+          
+
+        </div>
+    </div>
+    <hr style="size: 1px">
+
+
+<div class="top_banner">
+
+
+    <div class="container in_banner">
+        <div class=" logo col-md-8 ">
+
+
+           <a href="../index.html"> <img id="ctl00_TopLinks1_imgLogoLeft" src="../images/logo1.jpg" style="height:105px;border-width:0px;"> </a>
+
+             <div class="banner_text col-md-7 col-sm-7 col-xs-6">
+   
+                    <b> <h1 style="color: black; font-family:ti;">
+                         <strong> Welcome To AICTE </strong>
+                     </h1></b>
+               </div>
+                    </div> 
+
+       <div class="col-md-4 sat">
+                    <img id="ctl00_TopLinks1_imgLogoright" src="../images/logo8.png" style="height:105px;border-width:0px;     float: right;">  
+             </div>
+  </div>
+
+</div>
+
+
+
+                  <nav class="navbar navbar-inverse col-lg-12">
+                            <div class="container-fluid">
+                              <div class="navbar-header">
+                                    
+                              </div>
+                                  <ul class="nav navbar-nav">
+                                      <li><a href="../index.html">Home</a></li>
+                                      <li class="active" class="dropdown">
+                                        <a  class="dropdown-toggle" data-toggle="dropdown" href="#">About Us
+                                        <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="index.html">About AICTE</a></li>
+                                          <li><a href="#">Message</a></li>
+                                          <li><a href="#">Regional Offices</a></li>
+                                          <li><a href="#">Who is Who</a></li>
+                                        <li><a href="#">contact us</a>
+                                        </li>
+                                   </ul>
+                                      </li>
+
+                                  <li  class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bureaus
+                                        <span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                          <li><a href="#">Administration Bureau</a></li>
+                                          <li><a href="#">Academic Bureau</a></li>
+                                          <li><a href="#">University Bureau</a></li>
+                                        <li><a href ="#">Finance bureaus</a></li>
+                                        <li><a href="#">Approvals Bureau</a></li>
+                                        <li><a herf ="#">planning & coordination Bureau</a></li>
+                                        <li><a href ="#">Research institute & facility development(RIFD)</a></li>
+                                      </ul>
+                                  </li>
+
+
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Grievance
+                                        <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#">Anti Ragging</a></li>
+                                          <li><a href="#">RTI</a></li>
+                                          <li><a href="#">CVC</a></li>
+                                        </ul>
+                                      </li>
+                                      
+
+                                      <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports
+                                        <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#">Annual Report</a></li>
+                                          <li><a href="#">Start-Up Policy</a></li>
+                                          <li><a href="#">Yashpal committee Report</a></li>
+                                        <li><a herf ="#">Justice B.N Srikrishna Committee Report</a></li>
+                                        <li><a herf ="#">Knowledge Commission Report</a></li>
+                                        <li><a herf ="#">Sarva Shishka Abhiyan</a></li>
+                                        <li><a herf ="#">Rashtiya Uchatar Shiksha Abhiyan-RUSA</a></li>
+                                        <li><a herf ="#">Accredited Institutions</a></li>
+                                        </ul>
+                                      </li>
+                                      
+
+                                  <li class="" class="dropdown">
+                                        <a class="" class="dropdown-toggle" data-toggle="dropdown" href="#">Statistics
+                                        <span class="caret"></span></a>
+                                        <ul  class="dropdown-menu">
+                                          <li><a href="../dashboard/index.html">Dashboard</a></li>
+                                          <li><a href="#">Approved Institutes</a></li>
+                                          <li><a href="#">NRI/PIO-FN-CIWG/TP</a></li>
+                                        <li><a herf ="#">Facilities</a></li>
+                                        <li><a herf ="#">Graph & Charts</a></li>
+                                        <li><a herf ="#">Closed Courses</a></li>
+                                        <li><a herf ="#">Closed Institutes</a></li>
+                                        <li><a herf ="#">Unapproved Institutions</a></li>
+                                        </ul>
+                                  </li>
+                                      
+
+                                  <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Education
+                                        <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#">Educational Network</a></li>
+                                          <li><a href="#">Collaborations</a></li>
+                                          <li><a href="#">Mobile Education</a></li>
+                                        <li><a herf ="#">Finishing Schools</a></li>
+                                        <li><a herf ="#">Vocational Education</a></li>
+                                        <li><a herf ="#">Community Collegs</a></li>
+                                        <li><a herf ="#">Distance Education</a></li>
+                                        <li><a herf ="#">Institutions in India</a></li>
+                                        <li><a herf ="#">USE of ICT</a></li>
+                                        <li><a herf ="#">Model Syllabus</a></li>
+                                        <li><a herf ="#">liberary service</a></li>
+                                        <li><a herf ="#">Project Factory</a></li>        
+                                        </ul>
+                                  </li>
+                                      
+                                  <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Students
+                                        <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#">Admission</a></li>
+                                          <li><a href ="#">Pledge</a></li>
+                                          <li><a href ="#">Scholarships</a></li>
+                                          <li><a herf ="#">Awards</a></li>
+                                          <li><a herf ="#">Ethics</a></li>
+                                          <li><a herf ="#">Loans</a></li>
+                                          <li><a herf ="#">Facilities for Differently Abled</a></li>
+                                          <li><a herf ="#">Facilities for Girls</a></li>
+                                          <li><a herf ="#">Placements</a></li>
+                                          <li><a herf ="#">Want to be an Entrepreneur?</a></li>
+                                          <li><a herf ="#">Research Funds</a></li>
+                                    </ul>
+                                   </li>
+                                      
+
+                                  <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bulletin
+                                        <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                          <li><a href ="#">Upcoming events</a></li>
+                                          <li><a href ="#">Advertisement</a></li>
+                                          <li><a href ="#">jobs</a></li>
+                                        <li><a herf ="#">Circulars</a></li>
+                                        <li><a herf ="#">Tenders</a></li>
+                                        <li><a herf ="#">News Letters</a></li>
+                                        <li><a herf ="#">Downloads</a></li>
+                                        <li><a herf ="#">Free Downloads</a></li>
+                                        <li><a herf ="#">Photo Gallery</a></li>
+                                        </ul>
+                                  </li>
+                                    
+                                    </ul>
+
+                                      </li>
+                                    
+                                    </ul>
+                                    <div class="search col-md-4 ">
+                                <form class="form-inline mt-2 mt-md-0">
+                                          <input class="form-control mr-sm-2" type="text" placeholder="search">
+                                        
+                                          <button type="button" class="btn btn-info" type="submit">search</button>
+                                        </form>
+                                            </div>
+
+                                  </div>
+                                </nav>
+
+    <!-- Page Content -->
+    <div class="container tex">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="lead"></p>
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">About AICTE</a>
+                    <a href="#" class="list-group-item">Message</a>
+                    <a href="#" class="list-group-item">Regional Offices</a>
+                    <a href="#" class="list-group-item">Who is Who</a>
+                    <a href="#" class="list-group-item">Contact us</a>
+                </div>
+            </div>
+
+
+            
+
+             <div class="col-md-9">
+                  
+                <div class="thumbnail">
+
+             <div id="backg" class="col-xs-12" ;> 
+            
+                       <div class="caption-full">
+               
+                         <h4 class="pull-right"></h4>
+                       
+                        
+                                 <p>
+                                About Us
+
+                                Technical education in India contributes a major share to the overall education system and plays a vital role in the social and economic development of our nation. In India, technical education is imparted at various levels such as: craftsmanship, diploma, degree, post-graduate and research in specialized fields, catering to various aspects of technological development and economic progress. </p>
+                                <p>
+                                The beginning of formal Technical Education in India can be dated back to the mid 19th Century. The major policy initiatives in the pre-independence period included appointment of the Indian Universities Commission in 1902, issue of the Indian Education policy resolution in 1904 and the Governor General’s policy statement of 1913 stressing the importance of Technical Education, the establishment of IISc in Bangalore, Institute for Sugar, Textile and Leather Technology in Kanpur, N.C.E. in Bengal in 1905 and Industrial schools in several provinces. <br>Significant developments include:
+                                </p>
+
+                                      <ul>
+                                         <li> Constitution of the Technical Education Committee of the Central Advisory Board of Education (CABE) of 1943;</li>
+                                         <li>Preparation of the Sergeant Report of 1944;</li>
+                                         <li>Formation of the All India Council for Technical Education (AICTE) in 1945 by the Government of India.</li>
+                                      </ul>
+                                            <p>
+
+                                            All India Council for Technical Education (AICTE) was set-up in November 1945 as a national level Apex Advisory Body to conduct survey on the facilities on technical education and to promote development in the country in a coordinated and integrated manner.</p><p> And to ensure the same, as stipulated in, the National Policy of Education (1986), AICTE be vested with statutory authority for planning, formulation and maintenance of norms and standards, quality assurance through accreditation, funding in priority areas, monitoring and evaluation, maintaining parity of certification and awards and ensuring coordinated and integrated development and management of technical education in the country.
+
+                                            </p>
+                                          
+
+                                          <p>
+
+                                          The purview of AICTE (the Council) covers programmes of technical education including training and research in Engineering, Technology, Architecture, Town Planning, Management, Pharmacy, Applied Arts and Crafts, Hotel Management and Catering Technology etc. at different levels.
+                                          </p>
+
+                                          
+                                          <p>
+                                          The AICTE has constructed its own fully air-conditioned Office Building having a covered area of five acres of land, situated at Nelson Mandela Marg, Vasant Kunj, New Delhi-110 067. The Office Building is Ground + 3 floors with three wings each having a seating capacity of about 300 employees, 8 Conference rooms, an 800 capacity auditorium, 20 rooms Guest House and Canteens for Staff & Officers. There is a 2 level basement parking and lush green open spaces. There is also a temple of Ganesha. 
+
+                                          </p>
+                                      </div>
+                                 </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+    </div>
+    <!-- /.container -->
+
+
+        
+       <div class="fooot">
+
+
+<!--footer start from here-->
+<footer>
+  <div class="container-fluid">
+    <div class="fot">
+      <div class="col-md-4 col-sm-6 footerleft ">
+        <div class="logofooter"> AICTE</div>
+        <p></p>
+     
+        
+      </div>
+      <div class="col-md-2 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">IMPORTANT LINKS</h6>
+        <ul class="footer-ul">
+           <li><a href="http://mhrd.gov.in/"> MHRD</a></li>
+          <li><a href="https://india.gov.in/"> GOI</a></li>
+          <li><a href="http://www.ugc.ac.in/"> UGC</a></li>
+          <li><a href="http://www.ncte.org/"> NCTE</a></li>
+          <li><a href="http://gate.iitk.ac.in/GATE2015/"> GATE</a></li>
+          <li><a href="http://www.iitjee.org/"> JEE</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <h3 class="heading7">Today's Quote</h7>
+        <div class="post">
+      <h3>Arise, awake and do not stop until the goal is reached.</h3>
+      <blockquote><p>-Swami Vivekananda</p></blockquote>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+          <div class="fb-xfbml-parse-ignore">
+            <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-6">
+      <p>AICTE</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="bottom_ul">
+      
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Faq's</a></li>
+        <li><a href="#"> Policy </a></li>
+        <li><a href="#"> Grievances</a></li>
+     
+
+      </ul>
+    </div>
+  </div>
+</div>
+   </div>
+
+
+</body>
+
+</html>
